@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* HEADER SYTLES */
+/* HEADER STYLES */
 header {
     padding: 20px 35px;
     background-color: blue;
@@ -38,4 +38,29 @@ header nav ul a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/* END HEADER STYLES */
+
+section {
+    padding: 60px;
+}
+
+/* HERO STYLES */
+.hero {
+    background-image: url('../assets/images/pexels-markus-spiske-177598.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero h2 {
+    color: white;
+    background-color: aquamarine;
+    position: relative;
+    top: px;
+    left: 50px;
+}
+
+/* END HERO STYLES */
 
