@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color:darkslategray;
+}
+
+body, html {
+    width: 300%;
+    height: 200%;
+}
+
+.d-flex{
+    display: flex;
 }
 
 /* HEADER STYLES */
@@ -11,7 +21,28 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: sticky;
+    width: 1920px;
 }
+
+.navbar-fixed-top{
+    /* position: -webkit-sticky; */
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0px;
+    z-index: 9999;
+}
+
+.logo{
+    
+}
+
+/* .navbar {
+    background-color: #000;
+    justify-content: space-between;
+    padding: 0 5%;
+} */
 
 header h1 {
     font-weight: bold;
@@ -44,23 +75,4 @@ section {
     padding: 60px;
 }
 
-/* HERO STYLES */
-.hero {
-    background-image: url('../assets/images/pexels-markus-spiske-177598.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.hero h2 {
-    color: white;
-    background-color: aquamarine;
-    position: relative;
-    top: px;
-    left: 50px;
-}
-
-/* END HERO STYLES */
 
