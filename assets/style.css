@@ -1,8 +1,18 @@
+:root{
+    --purple-pop: #4f03a9;
+    --lighter-grey: #656565;
+    --darker-grey: #434343;
+    --off-black: #191919;
+    --white: #FFFFFF;
+    --my-font: 'din_alternatebold', Arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:darkslategray;
+    background-color: var(--off-black);
+    font-family: var(--my-font);
 }
 
 /* Helpful site for figuring out flex stylings https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
@@ -13,7 +23,7 @@ body, html {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    top: 40px;
+    /* top: 40px; */
 }
 
 body .big-div{
@@ -26,15 +36,57 @@ body .big-div{
     display: flex;
 }
 
+.big-div{
+    size: 1920px;
+    color: var(--lighter-grey);
+    position: relative;
+    top: 40px;
+}
+
+section {
+    padding: 60px;
+}
+
+/*references used for skewed border https://codepen.io/daviddarnes/pen/BazQJd */
+.skewed-border-right {
+    -webkit-transform: skewX(-10deg);
+	-moz-transform: skewX(-10deg);
+	-ms-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+    border: 2px solid var(--purple-pop);
+}
+
+.skewed-border-left {
+    -webkit-transform: skewX(10deg);
+	-moz-transform: skewX(10deg);
+	-ms-transform: skewX(10deg);
+	transform: skewX(10deg);
+    border: 2px solid var(--purple-pop);
+}
+
+/* Need to figure out how to get doubled border
+#landing-area img:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #ffea00;
+} */
+
 /* HEADER STYLES */
+/*reference for shortening border underneath header*/
 header {
     padding: 20px 35px;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
     width: 1920px;
+    border-bottom: 5px solid var(--purple-pop);
 }
 
 .navbar-fixed-top{
@@ -46,20 +98,13 @@ header {
     z-index: 9999;
 }
 
-.logo{
-
-}
-
-header h1 {
-    font-weight: bold;
-    margin: 0;
-    font-size: 36px;
-    color: yellow;
-}
-
 header a {
     text-decoration: none;
-    color:yellow;
+}
+
+header .logo{
+    color: var(--purple-pop);
+    font-size: 40px;
 }
 
 header nav ul {
@@ -74,15 +119,48 @@ header nav ul a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
+    color: var(--lighter-grey);
 }
+
 /* END HEADER STYLES */
 
-.big-div{
-    size: 1920px;
+
+
+/*LANDING DIV STYLE SECTION*/
+
+
+#landing-area h3{
+    position: relative;
+    top: 310px;
+    left: 470px;
 }
 
-section {
-    padding: 60px;
+#landing-area #intro-para{
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    top: -40px;
+    left: 450px;
+    padding: 15px;
+    z-index: 10;
 }
+
+
+#landing-area a{
+    text-decoration: none;
+}
+
+#landing-area img{
+    max-width: 450px;
+    max-height: auto;
+    position: relative;
+    top: 115px;
+    left: 390px;
+
+    /* background-color: #434343; */
+    
+}
+
+
 
 
