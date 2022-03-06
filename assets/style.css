@@ -5,9 +5,21 @@
     background-color:darkslategray;
 }
 
+/* Helpful site for figuring out flex stylings https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
 body, html {
-    width: 300%;
-    height: 200%;
+    width: 305%;
+    /* height: 200%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 40px;
+}
+
+body .big-div{
+    height: 1080px;
+    width: 1920px;
+    border: 5px solid seashell;
 }
 
 .d-flex{
@@ -35,14 +47,8 @@ header {
 }
 
 .logo{
-    
-}
 
-/* .navbar {
-    background-color: #000;
-    justify-content: space-between;
-    padding: 0 5%;
-} */
+}
 
 header h1 {
     font-weight: bold;
@@ -70,6 +76,10 @@ header nav ul a {
     font-size: 1.55vw;
 }
 /* END HEADER STYLES */
+
+.big-div{
+    size: 1920px;
+}
 
 section {
     padding: 60px;

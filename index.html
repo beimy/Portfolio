@@ -8,56 +8,103 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
-      <!-- NAVIGATION -->
-      <!-- Article used in the design of this feature "https://w3codepen.com/howto-html-css-fixed-sticky-header/"-->
-      <header class="navbar d-flex navbar-fixed-top">
+  <body onload="window.scroll(1950, 5)">
+        <!-- NAVIGATION -->
+        <!-- Article used in the design of this feature "https://w3codepen.com/howto-html-css-fixed-sticky-header/"-->
+        <header class="navbar d-flex navbar-fixed-top">
           <div class="logo">
-            <a href="#">Aaron <span>Rones</span></a>
+            <a href="#landing-area">Aaron <span>Rones</span></a>
           </div>
             <nav class ="navbar">
                 <ul class="nav">
                     <li>
-                        <a href="#about-me">About Me</a>
+                        <a href="#vo-work-section">Voice Over</a>
                     </li>
                     <li>
-                        <a href="#work-done">Work Done</a>
+                        <a href="#webdev-work-section">Web Dev</a>
                     </li>
                     <li>
-                        <a href="#contact-me">Contact Me</a>
+                        <a href="#gamedev-work-section">Game Dev</a>
                     </li>
                     <li>
-                        <a href="#resume">Resume</a>
+                        <a href="#webdev-contact-section">Contact Me</a>
                     </li>
                 </ul>
             </nav>
-      </header>
+        </header>
+
+        <!-- VO Work Big DIV -->
+        <div class="big-div">
+            <section id="vo-work-section">
+                <h2>VO WORK SECTION</h2>
+            </section>
+        </div>
+
+        <!-- Landing Big DIV -->
+        <div class="big-div">
+            <section id="landing-area">
+                <!-- Intro -->
+                <h3>Hi There,</h3>
+                <p>I'm Aaron Rones. A <span id="text-link-web">Web Developer</span>, <span id="text-link-gamedev">Game Designer</span>,
+                and <span id="text-link-vo">Voice Actor</span>.</p>
+                <!-- Image -->
+
+                <!-- About me -->
+            </section>
+        </div>
 
 
-      <!-- ABOUT ME SECTION -->
-      <section id="about-me">
-          <div class="section-header">
-                <h2>About Me</h2>
-          </div>
- 
-      </section>
+        <!-- Game Dev Big Div -->
+        <div class="big-div">
+            <section id="gamedev-work-section">
+                <h2>GAME DEV WORK SECTION</h2>
+            </section>
+        </div>
 
-      <!-- WORK DONE SECTION -->
-      <section id="work-done">
-          <h2>Work Done</h2>
-      </section>
+        <!-- VO Contact Info Big Div -->
+        <div class="big-div">
+            <section id="vo-contact-section">
+                <h2>VO CONTACT INFO SECTION</h2>
+            </section>  
+        </div>
 
-      <!-- CONTACT ME SECTION -->
-      <section id="contact-me">
-          <h2>Contact Me</h2>
-      </section>
+        <!-- Web Dev Work Big Div -->
+        <div class="big-div">
+            <section id="webdev-work-section">
+                <h2>WEB DEV WORK SECTION</h2>
+            </section>
+        </div>
 
-      <!-- RESUME SECTION -->
-      <section id="resume">
-          <h2>Resume</h2>
-      </section>
+        <!-- Game Dev Contact Info Big Div -->
+        <div class="big-div">
+            <section id="gamedev-contact-section">
+                <h2>GAME DEV CONTACT INFO SECTION</h2>
+            </section>  
+        </div>
 
+        <!-- VO Resume Big Div -->
+        <div class="big-div">
+            <section id="vo-resume-section">
+                <h2>VO RESUME SECTION</h2>
+            </section>
+        </div>
 
-	<script src="index.js"></script>
+        <!-- Web Dev Contact Info/Resume Big Div -->
+        <div class="big-div">
+            <section id="webdev-contact-section">
+                <h2>WEB DEV CONTACT SECTION SECTION</h2>
+            </section>
+        </div>
+
+        <!-- Game Dev Resume Big Div -->
+        <div class="big-div">
+            <section id="gamedev-resume-section">
+                <h2>GAME DEV RESUME SECTION</h2>
+            </section>
+        </div>
+
+      
+
+	<script src="javascript.js"></script>
   </body>
 </html>
