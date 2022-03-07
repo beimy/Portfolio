@@ -88,6 +88,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: -webkit-sticky;
     position: sticky;
     width: 1920px;
     border-bottom: 5px solid var(--purple-pop);
@@ -95,7 +96,7 @@ header {
 
 .navbar-fixed-top{
     /* position: -webkit-sticky; */
-    position: fixed;
+    /* position: fixed; */
     right: 0;
     left: 0;
     top: 0px;
@@ -104,6 +105,8 @@ header {
 
 header a {
     text-decoration: none;
+    text-align: center;
+    float: left;
 }
 
 header .logo{
@@ -168,6 +171,7 @@ header nav ul a {
 
 #webdev{
     border-top: 5px solid var(--white);
+    height: 1500px;
 }
 
 
@@ -184,6 +188,7 @@ header nav ul a {
     justify-content: center;
     padding: 60px;
     justify-content: center;
+    width: 100%;
 }
 
 .work-text{
@@ -217,16 +222,247 @@ header nav ul a {
     opacity: 50%;
 }
 
-.latest-project img:hover{
+.proj-img-effect{
+    max-width: 700px;
+    padding: 10px;
+    transition: opacity 1s;
+    opacity: 50%;
+}
+
+.proj-img-effect:hover{
     transition: opacity 1s;
     opacity: 100%;
 }
 
-.latest-project img:u
+.latest-project img:hover {
+    transition: opacity 1s;
+    opacity: 100%;
+}
 
-.cheat-left{
+
+.cheat-left {
     position: relative;
     right: 200px;
+}
+
+
+
+#minor-work {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+#minor-work ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#minor-work ul li{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.minor-proj {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid #4f03a9; */
+}
+
+.minor-proj img {
+    width: 400px;
+    height: 400px;
+}
+
+.minor-proj-text{
+    max-width: 200px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin: 25px 0 25px 10px;
+    justify-content: space-between;
+    /* background-color: #FFFFFF; */
+} 
+
+.minor-proj-text h4{
+    border-bottom: 2px solid var(--purple-pop);
+}
+
+.minor-proj-text .langs{
+    color: var(--purple-pop)
+}
+
+.minor-proj-text span{
+    color: var(--white)
+}
+
+/* END WEB DEV SECTION */
+
+/* WEB DEV CONTACT STYLE SECTION */
+
+.web-contact {
+    border-top: 5px solid var(--white);
+    display: flex;
+    justify-content: space-around;
+}
+
+.web-contact h2 {
+    position: absolute;
+    z-index: 10;
+    font-size: 100px;
+    top: -90px;
+    left: 100px;
+}
+
+#webdev-contact-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.contact-form {
+    position: relative;
+    margin: 100px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.contact-form input {
+    width: 100%;
+    border: 0;
+    background-color: var(--darker-grey);
+    height: 50px;
+    font-size: 16px;
+    color: var(--lighter-grey);
+    padding: 0 45px;
+}
+
+.contact-form input:hover{
+    transition: background-color 1s;
+    background-color: #FFFFFF;
+}
+
+.contact-form input:focus{
+    background-color: #FFFFFF;
+}
+
+.contact-form textarea {
+    width: 100%;
+    border: 0;
+    background-color: var(--darker-grey);
+    height: 50px;
+    font-size: 16px;
+    color: var(--lighter-grey);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contact-form textarea:hover{
+    transition: background-color 1s;
+    background-color: #FFFFFF;
+}
+
+.contact-form textarea:focus{
+    background-color: #FFFFFF;
+}
+
+.contact-form button {
+    float: right;
+    color: var(--lighter-grey);
+    width: 140px;
+    height: 50px;
+    border: 2px solid var(--purple-pop);
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    transition: background-color 1s;
+    background-color: #4f03a9;
+}
+
+.contact-form ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    opacity: 100;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+.contact-form form ul li.half:first-child{
+    margin-left: 0;
+}
+
+.contact-form form ul li.half{
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}
+
+.contact-form form {
+    margin: 10px 10px 10px 10px;
+}
+
+.contact-form p {
+    padding: 5px;
+}
+
+.socials-list {
+    margin: 100px 10px 10px 150px;
+    width: 50%;
+}
+
+.socials-list h3{
+    border-bottom: 2px solid var(--purple-pop);
+    font-size: 36px;
+}
+
+.socials-list p{
+    line-height: 1.5em;
+    font-size: 26px;
+}
+
+
+/* END WEB DEV CONTACT SECTION */
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px){
+    section{
+        padding: 30px 15px;
+    }
+
+
 }
 
 
